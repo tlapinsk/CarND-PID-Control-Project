@@ -2,6 +2,9 @@
 #define PID_H
 
 class PID {
+
+  double prev_cte;
+
 public:
   /*
   * Errors
@@ -13,9 +16,9 @@ public:
   /*
   * Coefficients
   */ 
-  double Kp;
-  double Ki;
-  double Kd;
+  double p;
+  double i;
+  double d;
 
   /*
   * Constructor
