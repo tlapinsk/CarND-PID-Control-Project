@@ -41,17 +41,17 @@ This picture from the [PID controller wiki]() is a great graphical representatio
 
 ![PID](https://github.com/tlapinsk/CarND-PID-Control-Project/blob/master/output/PID_en.svg.png?raw=true "PID control wiki graph")
 
-P - Proportional:
+**P - Proportional:**
 With Proportional, the controller output changes in "proportion" to the error between process variable and set point. Variable, Kp, controls how quickly the control response is. A larger Kp means the car reaches the reference state faster, but can overshoot if too large.
 
-I - Integral:
+**I - Integral:**
 The integral component sums the error term over time. The result is that even a small error term will cause the integral component to increase slowly. In our case, Ki will be zero or close to it due to no systematic bias.
 
-D - Derivative:
+**D - Derivative:**
 The derivative component causes the output to decrease if the process variable is increasing rapidly. The derivative response is proportional to the rate of change of the process variable. Kd will control oscillations that the car makes and helps drive the error to zero if set correctly.
 
-Tuning:
-[This post](https://discussions.udacity.com/t/how-to-tune-parameters/303845/4) helped me when tuning my parameters. Following these instructions I ended up with the following parameters.
+**Tuning:**
+[This post](https://discussions.udacity.com/t/how-to-tune-parameters/303845/4) helped me when tuning my parameters. Following these instructions I used manual tuning and ended up with the following parameters. It was easiest to tune Kp first, and then use Kd to optimize the car to make it all the way around the track.
 
 |  Parameter   |    Final State  |
 |  -----       |    -------      |
@@ -59,10 +59,12 @@ Tuning:
 |  Ki          |    0            |
 |  Kd          |    2.8          |
 
-Final Thoughts:
+**Final Thoughts:**
 As you can see both the PID and PD controllers worked the most efficiently. The PI controller wobbled the car back and forth due to the missing Kd variable (essentially set to zero) that helps control oscillations and lower the error rate.
 
-Interestingly, the PD controller actually outperformed the PID controller on some parts of the track. This may just be due to typical difference between runs in the simulator since the Ki variable is set to zero. Overall, I'm very excited about the result. Although, I found the Deep Learning approach to be a bit more fun and involved!
+Interestingly, the PD controller actually outperformed the PID controller on some parts of the track. This may just be due to typical difference between runs in the simulator. The PID and PD controllers should be the same since the Ki parameter is set to zero. 
+
+Overall, I'm very excited about the result. Although, I found the Deep Learning approach to be a bit more fun and involved!
 
 ## Resources
 Shoutout to the tutorials provided by Udacity on PID Control. Below are further resources and helpful links that I used to complete this project:
