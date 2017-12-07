@@ -25,7 +25,7 @@ FYI, I ran my code on a Macbook Pro. Please ensure you have downloaded the Udaci
 ## Results
 In the following video, the car reached as fast as 34 MPH
 
-[![PID](https://github.com/tlapinsk/CarND-Kidnapped-Vehicle-Project/blob/master/output/results.png?raw=true)](https://www.youtube.com/watch?v=EsRaAmHNpmE "PID")
+[![PID](https://github.com/tlapinsk/CarND-PID-Control-Project/blob/master/output/pid.png?raw=true)](https://youtu.be/EsRaAmHNpmE "PID")
 
 ## Resources
 Shoutout to the tutorials provided by Udacity and Mercedes on Particle Filters. Below are further resources and helpful links that I used to complete this project:
