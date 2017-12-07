@@ -56,8 +56,8 @@ The derivative component causes the output to decrease if the process variable i
 |  Parameter   |    Final State  |
 |  -----       |    -------      |
 |  Kp          |    0.15         |
-|  Ki          |    0            |
-|  Kd          |    2.8          |
+|  Ki          |    0.001        |
+|  Kd          |    2.5          |
 
 **Final Thoughts:**
 As you can see both the PID and PD controllers worked the most efficiently. The PI controller wobbled the car back and forth due to the missing Kd variable (essentially set to zero) that helps control oscillations and lower the error rate.
