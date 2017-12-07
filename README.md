@@ -59,6 +59,11 @@ Tuning:
 |  Ki          |    0            |
 |  Kd          |    2.8          |
 
+Final Thoughts:
+As you can see both the PID and PD controllers worked the most efficiently. The PI controller wobbled the car back and forth due to the missing Kd varaible that helps control oscillations (or the amount of correction the car performs to reach its reference).
+
+Interestingly, the PD controller actually outperformed the PID controller on some parts of the track. This may just be due to typical difference between runs in the simulator since the Ki variable is set to zero. Overall, I'm very excited about the result. Although, I found the Deep Learning approach to be a bit more fun and involved!
+
 ## Resources
 Shoutout to the tutorials provided by Udacity on PID Control. Below are further resources and helpful links that I used to complete this project:
 
