@@ -2,7 +2,7 @@
 In this project, I used C++ to write a program that uses PID Control to steer a car around a virtual track. 
 
 ## Project Info
-For a great YouTube video on PID control, [click here](https://www.youtube.com/watch?v=UR0hOmjaHp0)
+For a great introduction to the topic, check out [this](https://www.youtube.com/watch?v=UR0hOmjaHp0) YouTube video.
 
 To see the implementation please visit the following file in the 'src' folder:
 
@@ -23,14 +23,46 @@ FYI, I ran my code on a Macbook Pro. Please ensure you have downloaded the Udaci
 9. Run the term2_sim application, select Project 3, and click 'Start'
 
 ## Results
-In the following video, the car reached as fast as 34 MPH
+Check out the gif below for an example of my PID implementation:
 
-[![PID](https://github.com/tlapinsk/CarND-PID-Control-Project/blob/master/output/pid.png?raw=true)](https://youtu.be/EsRaAmHNpmE "PID")
+
+
+You can also check out the full video [here](https://youtu.be/EsRaAmHNpmE)
+
+Here is the result for the PD implementation:
+
+You can also check out the full video [here](https://youtu.be/x8V2tFdqlVQ)
+
+Here is the result for the PI implementation:
+
+You can also check out the full video [here](https://youtu.be/ZpeBvwV8f0c)
+
+[![PID](https://github.com/tlapinsk/CarND-PID-Control-Project/blob/master/output/pid2.png?raw=true)](https://youtu.be/EsRaAmHNpmE "PID")
+
+## PID Control
+
+P - Proportional:
+With Proportional, the controller output changes in "proportion" to the error between process variable and set point. Variable, Kp, controls how quickly the control response is. A larger Kp means the car reaches the reference state faster, but can overshoot if too large.
+
+I - Integral:
+The integral component sums the error term over time. The result is that even a small error term will cause the integral component to increase slowly. In our case, Ki will be zero or close to it due to no systematic bias.
+
+D - Derivative:
+The derivative component causes the output to decrease if the process variable is increasing rapidly. The derivative response is proportional to the rate of change of the process variable. Kd will control oscillations that the car makes.
+
+Tuning:
+[This post](https://discussions.udacity.com/t/how-to-tune-parameters/303845/4) helped me when tuning my parameters. Following these instructions I ended up with the following parameters.
+
+|  Parameter   |    Final State  |
+|  -----       |    -------      |
+|  Kp          |    0.15         |
+|  Ki          |    0            |
+|  Kd          |    2.8          |
 
 ## Resources
-Shoutout to the tutorials provided by Udacity and Mercedes on Particle Filters. Below are further resources and helpful links that I used to complete this project:
+Shoutout to the tutorials provided by Udacity on PID Control. Below are further resources and helpful links that I used to complete this project:
 
-- [Tracking a self-driving car with high precision](https://towardsdatascience.com/helping-a-self-driving-car-localize-itself-88705f419e4a)
-- [Udacity Self-Driving Car Nanodegree Project 8 - Kidnapped Vehicle](http://jeremyshannon.com/2017/06/02/udacity-sdcnd-kidnapped-vehicle.html)
-- [RMSE](https://discussions.udacity.com/t/rmse-is-ok-but-not-great/465374/4)
-- [updateWeights](https://discussions.udacity.com/t/updateweights-equation-clarification/369534/12)
+- [Tuning parameters](https://discussions.udacity.com/t/how-to-tune-parameters/303845/4)
+- [Intro to PID Control](https://www.youtube.com/watch?v=UR0hOmjaHp0)
+- [PID Theory Explained](http://www.ni.com/white-paper/3782/en/)
+- [PID controller wiki](https://en.wikipedia.org/wiki/PID_controller)
