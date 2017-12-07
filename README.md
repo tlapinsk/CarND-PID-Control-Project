@@ -37,9 +37,11 @@ Here is the result for the PI implementation:
 
 You can also check out the full video [here](https://youtu.be/ZpeBvwV8f0c)
 
-[![PID](https://github.com/tlapinsk/CarND-PID-Control-Project/blob/master/output/pid2.png?raw=true)](https://youtu.be/EsRaAmHNpmE "PID")
-
 ## PID Control
+
+This picture from the [PID controller wiki]() is a great graphical representation of PID control:
+
+![PID](https://github.com/tlapinsk/CarND-PID-Control-Project/blob/master/output/PID_en.svg.png?raw=true "PID control wiki graph")
 
 P - Proportional:
 With Proportional, the controller output changes in "proportion" to the error between process variable and set point. Variable, Kp, controls how quickly the control response is. A larger Kp means the car reaches the reference state faster, but can overshoot if too large.
