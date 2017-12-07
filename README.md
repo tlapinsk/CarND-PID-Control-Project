@@ -23,15 +23,15 @@ FYI, I ran my code on a Macbook Pro. Please ensure you have downloaded the Udaci
 9. Run the term2_sim application, select Project 3, and click 'Start'
 
 ## Results
-Check out the video below for an example of my PID implementation:
+Check out the gif below for an example of my PID implementation. The full video can be found [here](https://youtu.be/EsRaAmHNpmE).
 
 ![PID](https://github.com/tlapinsk/CarND-PID-Control-Project/blob/master/output/pid.gif?raw=true "PID")
 
-Here is the result for the PD implementation:
+Here is a quick gif for the PD implementation. The full video can be found [here](https://youtu.be/x8V2tFdqlVQ).
 
-[![PD](https://github.com/tlapinsk/CarND-PID-Control-Project/blob/master/output/pd.png?raw=true)](https://youtu.be/x8V2tFdqlVQ "PD")
+![PD](https://github.com/tlapinsk/CarND-PID-Control-Project/blob/master/output/pd.gif?raw=true "PD")
 
-Here is the result for the PI implementation:
+Here is a quick gif for the PI implementation. The full video can be found [here](https://youtu.be/ZpeBvwV8f0c).
 
 ![PI](https://github.com/tlapinsk/CarND-PID-Control-Project/blob/master/output/pi.gif?raw=true "PI")
 
