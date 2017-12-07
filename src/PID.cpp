@@ -28,6 +28,13 @@ void PID::UpdateError(double cte) {
 }
 
 double PID::TotalError() {
+	// PI implementation
+	// double total_error = -p * p_error - i * i_error;
+	
+	// PD implementation
+	// double total_error = -p * p_error - d * d_error;
+
+	// Full PID implementation
 	double total_error = -p * p_error - i * i_error - d * d_error;
 
 	return total_error;
