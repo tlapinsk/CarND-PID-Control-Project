@@ -48,7 +48,7 @@ With Proportional, the controller output changes in "proportion" to the error be
 The integral component sums the error term over time. The result is that even a small error term will cause the integral component to increase slowly. In our case, Ki will be zero or close to it due to no systematic bias.
 
 **D - Derivative:**
-The derivative component causes the output to decrease if the process variable is increasing rapidly. The derivative response is proportional to the rate of change of the process variable. Kd will control oscillations that the car makes and helps drive the error to zero if set correctly.
+The derivative component causes the output to decrease if the process variable is increasing rapidly. The derivative response is proportional to the rate of change of the process variable. Kd will control oscillations that the car makes and helps drive the error to zero if set correctly. You can see in the PI gif above what happens when Kd is removed (or set to zero).
 
 **Tuning:**
 [This post](https://discussions.udacity.com/t/how-to-tune-parameters/303845/4) helped me when tuning my parameters. Following these instructions I used manual tuning and ended up with the following parameters. It was easiest to tune Kp first, and then use Kd to optimize the car to make it all the way around the track.
