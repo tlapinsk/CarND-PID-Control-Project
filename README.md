@@ -25,7 +25,7 @@ FYI, I ran my code on a Macbook Pro. Please ensure you have downloaded the Udaci
 ## Results
 Check out the video below for an example of my PID implementation:
 
-![PID](https://github.com/tlapinsk/CarND-PID-Control-Project/blob/master/output/pid2.png?raw=true)
+![PID](https://github.com/tlapinsk/CarND-PID-Control-Project/blob/master/output/pid.gif?raw=true "PID")
 
 Here is the result for the PD implementation:
 
@@ -33,7 +33,7 @@ Here is the result for the PD implementation:
 
 Here is the result for the PI implementation:
 
-[![PI](https://github.com/tlapinsk/CarND-PID-Control-Project/blob/master/output/pi.png?raw=true)](https://youtu.be/ZpeBvwV8f0c "PI")
+![PI](https://github.com/tlapinsk/CarND-PID-Control-Project/blob/master/output/pi.gif?raw=true "PI")
 
 ## PID Control
 
